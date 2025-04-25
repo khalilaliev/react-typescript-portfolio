@@ -14,11 +14,11 @@ const Projects: FC = () => {
     <motion.div {...animationProps}>
       <DynamicTitle title="Portfolio | Projects" />
       <Heading text="My Projects" />
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col dark:bg-dark-bg dark:border-none border border-[#E5E7EB] bg-white shadow-lg dark:shadow-header-bg rounded-xl overflow-hidden w-full hover:-translate-y-1 duration-300 transition-all"
+            className="flex flex-col dark:bg-dark-bg dark:border-none border border-[#e5e7eb90] hover:shadow-lg bg-white  dark:shadow-header-bg rounded-xl overflow-hidden w-full hover:-translate-y-1 duration-300 transition-all"
           >
             <Link to={`/projects/${project.id}`}>
               <div className="flex-shrink-0">

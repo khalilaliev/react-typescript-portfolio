@@ -6,6 +6,7 @@ import propertyPulse from "../assets/propertypulse.png";
 import hillegal from "../assets/hilegal.png";
 import bridgecorner from "../assets/bridgecorner.png";
 import dscasapro from "../assets/dscasapro.png";
+
 interface IProjects {
   id: number;
   title: string;
@@ -21,7 +22,7 @@ interface IProjects {
 export const projects: IProjects[] = [
   {
     id: 1,
-    title: "Fullstack PropertyPulse",
+    title: 'Fullstack PropertyPulse',
     description:
       "Building a full-featured property rental website using Next.js",
     imageUrl: propertyPulse,

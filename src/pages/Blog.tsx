@@ -18,7 +18,7 @@ const Blog: FC = () => {
           {blogs.map((blog) => (
             <div
               key={blog.id}
-              className="flex flex-col dark:bg-dark-bg dark:border-none border border-[#E5E7EB] bg-white shadow-lg dark:shadow-header-bg rounded-xl overflow-hidden w-full hover:-translate-y-1 duration-300 transition-all"
+              className="flex flex-col dark:bg-dark-bg dark:border-none border border-[#e5e7eb90] hover:shadow-lg bg-white dark:shadow-header-bg rounded-xl overflow-hidden w-full hover:-translate-y-1 duration-300 transition-all"
             >
               {/* <Link to={`/blogs/${blog.id}`}>
                 <div className="flex-shrink-0">

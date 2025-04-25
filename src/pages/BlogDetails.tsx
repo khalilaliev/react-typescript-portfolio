@@ -18,18 +18,18 @@ const BlogDetails: FC = () => {
     <motion.div {...animationProps}>
       <DynamicTitle title={`Portfolio | Blog ${id}`} />
       <BackButton source="/blog" text="Back to blogs" />
-      <div className="flex flex-col dark:bg-dark-bg bg-white shadow-lg dark:shadow-header-bg rounded-xl overflow-hidden w-full  duration-300 transition-all">
+      <div className="flex flex-col dark:bg-dark-bg bg-white  dark:shadow-header-bg rounded-xl overflow-hidden w-full  duration-300 transition-all">
         <img
           src={blog.imageUrl}
           alt={blog.title}
           className=" rounded-xl min-h-44 w-full object-cover shadow-lg"
         />
         {blog.activity?.length !== 0 && (
-          <ul>
+          <ul className='mt-5'>
             {blog.activity?.map((a) => (
               <>
-                <li key={a.id} className="mt-6 p-5 leading-7 text-gray-700">
-                  <p className="mt-3 dark:text-dark-text">{a.label}</p>
+                <li key={a.id} className="p-3 leading-7 text-gray-700">
+                  <p className=" dark:text-dark-text">{a.label}</p>
                   {a.img && (
                     <img
                       src={a.img}

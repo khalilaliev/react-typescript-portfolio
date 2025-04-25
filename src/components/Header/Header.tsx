@@ -45,7 +45,7 @@ const Header: FC = () => {
             to="/"
             className="font-semibold flex items-center justify-between "
           >
-            <FaReact className="text-3xl mr-1" />
+            <FaReact className="text-4xl hover:rotate-180 hover:scale-110 transition-all duration-1000" />
           </Link>
           <nav className="hidden md:flex gap-1">
             {NAVBAR_ITEMS.map((item) => {
@@ -69,14 +69,14 @@ const Header: FC = () => {
             })}
           </nav>
 
-          <label className="relative inline-block w-[56px] h-[30px]">
+          <label className="relative cursor-pointer inline-block w-[56px] h-[30px]">
             <input
               type="checkbox"
               checked={theme === "dark"}
               onChange={toggleTheme}
               className="sr-only peer"
             />
-            <div className="w-full h-full bg-gray-300 dark:bg-gray-600 rounded-full peer-checked:bg-blue-600 transition-colors duration-300"></div>
+            <div className="w-full h-full bg-gray-300 cursor-pointer dark:bg-gray-600 rounded-full peer-checked:bg-blue-600 transition-colors duration-300"></div>
 
             <div className="absolute top-[2px] left-[2px] w-[26px] h-[26px] bg-white rounded-full shadow-md flex items-center justify-center transition-all duration-300 peer-checked:translate-x-[26px]">
               <MdOutlineLightMode
