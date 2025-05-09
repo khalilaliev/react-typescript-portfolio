@@ -16,7 +16,7 @@ const BlogDetails: FC = () => {
   }
   return (
     <motion.div {...animationProps}>
-      <DynamicTitle title={`Portfolio | Blog ${id}`} />
+      <DynamicTitle title={`Portfolio | ${blog.title}`} />
       <BackButton source="/blog" text="Back to blogs" />
       <div className="flex flex-col dark:bg-dark-bg bg-white  dark:shadow-header-bg rounded-xl overflow-hidden w-full  duration-300 transition-all">
         <img

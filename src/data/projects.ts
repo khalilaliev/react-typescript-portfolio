@@ -6,6 +6,7 @@ import propertyPulse from "../assets/propertypulse.png";
 import hillegal from "../assets/hilegal.png";
 import bridgecorner from "../assets/bridgecorner.png";
 import dscasapro from "../assets/dscasapro.png";
+import gawag from "../assets/gaw-ag.jpg";
 
 interface IProjects {
   id: number;
@@ -34,30 +35,39 @@ export const projects: IProjects[] = [
   },
   {
     id: 2,
+    title: 'Gaw AG',
+    description:
+      "Using PHP Wordpress with building a full-featured fullstack project",
+    imageUrl: gawag,
+    link: "https://gaw-ag.odin.toweb.swiss/",
+    platform: "Web",
+    stack: "Wordpress, PHP",
+    language: "English, German, French",
+  },
+  {
+    id: 3,
     title: "DSCasaPro",
     description:
       "Using PHP Wordpress with building a full-featured fullstack project",
     imageUrl: dscasapro,
     link: "https://dscasapro.odin.toweb.swiss/",
-    // gitHub: "https://github.com/khalilaliev/react-proshop",
     platform: "Web",
     stack: "Wordpress, PHP",
     language: "German, English",
   },
   {
-    id: 3,
+    id: 4,
     title: "BridgeCorner",
     description:
       "Using PHP Wordpress with building a full-featured fullstack project",
     imageUrl: bridgecorner,
     link: "https://bridgecorner.ch",
-    // gitHub: "https://github.com/khalilaliev/react-proshop",
     platform: "Web",
     stack: "Wordpress, PHP",
     language: "German",
   },
   {
-    id: 4,
+    id: 5,
     title: "Fullstack ProShop",
     description:
       "Using the MERN stack, Redux and other technologies building  real life project",
@@ -69,7 +79,7 @@ export const projects: IProjects[] = [
     language: "English",
   },
   {
-    id: 5,
+    id: 6,
     title: "PizzaDay",
     description:
       "Using ReactJS, Redux and other technologies simple pizza website",
@@ -81,7 +91,7 @@ export const projects: IProjects[] = [
     language: "English",
   },
   {
-    id: 6,
+    id: 7,
     title: "Hillegal",
     description: "Using HTML/CSS and JS website about law company",
     imageUrl: hillegal,
@@ -92,7 +102,7 @@ export const projects: IProjects[] = [
     language: "English",
   },
   {
-    id: 7,
+    id: 8,
     title: "Simple Weather",
     description: "Using just HTML/CSS and JS simple weather app",
     imageUrl: weather,
@@ -103,7 +113,7 @@ export const projects: IProjects[] = [
     language: "English",
   },
   {
-    id: 8,
+    id: 9,
     title: "Todo",
     description:
       "Using ReactJS simple todo app with the ability to set priority",

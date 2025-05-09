@@ -4,10 +4,8 @@ import Heading from "../components/Heading/Heading";
 import { useState } from "react";
 import DynamicTitle from "../components/DynamicTitle/DynamicTitle";
 const Contact = () => {
-  console.log("Access Key:", import.meta.env.VITE_ACCESS_KEY);
 
   const { animationProps } = useFadeIn({ delay: 0 });
-
   const [result, setResult] = useState<{
     message: string;
     type: "loading" | "success" | "error" | null;

@@ -19,7 +19,7 @@ const ProjectsDetail: FC = () => {
 
   return (
     <motion.div {...animationProps}>
-      <DynamicTitle title={`Portfolio | Project ${id}`} />
+      <DynamicTitle title={`Portfolio | ${project.title}`} />
       <BackButton source="/projects" text="Back to projects" />
       <div className="flex flex-col dark:bg-dark-bg bg-white shadow-lg dark:shadow-header-bg rounded-xl overflow-hidden w-full  duration-300 transition-all">
         <div className="flex-shrink-0">

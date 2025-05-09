@@ -7,8 +7,8 @@ interface IExperiences {
 export const experiences: IExperiences[] = [
   {
     id: 1,
-    year: "2019 - 2023",
-    experience: "Bachelor of International Economics.",
+    year: "2024 - present",
+    experience: " Front-End / Wordpress Developer at toweb GmbH",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const experiences: IExperiences[] = [
   },
   {
     id: 3,
-    year: "2024 - present",
-    experience: " Front-End / Wordpress Developer at toweb GmbH",
+    year: "2019 - 2023",
+    experience: "Bachelor of International Economics.",
   },
 ];

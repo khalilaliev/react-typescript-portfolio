@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+ import { FC, useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaReact } from "react-icons/fa";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
@@ -49,11 +49,9 @@ const Header: FC = () => {
           </Link>
           <nav className="hidden md:flex gap-1">
             {NAVBAR_ITEMS.map((item) => {
-              const isActive =
-                pathname === item.path ||
-                (item.path === "/projects" &&
-                  /^\/projects\/\d+$/.test(pathname)) ||
-                (item.path === "/blog" && /^\/blog\/\d+$/.test(pathname));
+              const isActive: boolean = item.path === '/'
+                ? pathname === '/'
+                : pathname.startsWith(item.path);
 
               return (
                 <Link
