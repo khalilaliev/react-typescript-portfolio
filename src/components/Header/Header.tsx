@@ -86,7 +86,7 @@ const Header: FC = () => {
         }`}
               />
               <MdOutlineDarkMode
-                className={`absolute text-[18px] text-gray-800 transition-all duration-300
+                className={`absolute text-[18px]  text-gray-800 transition-all duration-300
         ${
           theme === "dark"
             ? "opacity-100 translate-x-0"
@@ -107,18 +107,15 @@ const Header: FC = () => {
         {isOpen && (
           <nav className="md:hidden absolute flex flex-col space-y-4 top-17 right-0 w-40 bg-white dark:bg-dark-bg shadow-md  p-4 transition-all duration-300">
             {NAVBAR_ITEMS.map((item) => {
-              const isActive =
-                pathname === item.path ||
-                (item.path === "/projects" &&
-                  /^\/projects\/\d+$/.test(pathname)) ||
-                (item.path === "/blog" && /^\/blog\/\d+$/.test(pathname));
-
+              const isActive: boolean = item.path === '/'
+                ? pathname === '/'
+                : pathname.startsWith(item.path);
               return (
                 <Link
                   key={item.path}
                   to={item.path}
                   onClick={toggleMenu}
-                  className={`font-light border-b-2 border-transparent hover:bg-blue-200 rounded-lg p-2 duration-300 transition-all ${
+                  className={`font-light border-b-2 border-transparent hover:bg-blue-200 rounded-lg px-2 duration-300 transition-all ${
                     isActive ? "text-blue-500" : ""
                   }`}
                 >
