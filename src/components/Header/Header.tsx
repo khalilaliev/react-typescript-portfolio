@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext";
 import { NAVBAR_ITEMS } from "../../constants/navbarItems";
-import DropdownMenu from "../DropdownMenu/DropdownMenu.tsx";
+// import DropdownMenu from "../DropdownMenu/DropdownMenu.tsx";
 
 const Header: FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
