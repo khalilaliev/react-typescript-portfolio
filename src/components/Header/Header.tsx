@@ -1,4 +1,4 @@
- import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaReact } from "react-icons/fa";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
@@ -6,6 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext";
 import { NAVBAR_ITEMS } from "../../constants/navbarItems";
+import DropdownMenu from "../DropdownMenu/DropdownMenu.tsx";
 
 const Header: FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -49,9 +50,10 @@ const Header: FC = () => {
           </Link>
           <nav className="hidden md:flex gap-1">
             {NAVBAR_ITEMS.map((item) => {
-              const isActive: boolean = item.path === '/'
-                ? pathname === '/'
-                : pathname.startsWith(item.path);
+              const isActive: boolean =
+                item.path === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.path);
 
               return (
                 <Link
@@ -66,7 +68,7 @@ const Header: FC = () => {
               );
             })}
           </nav>
-
+          {/* <DropdownMenu /> */}
           <label className="relative cursor-pointer inline-block w-[56px] h-[30px]">
             <input
               type="checkbox"
@@ -74,7 +76,7 @@ const Header: FC = () => {
               onChange={toggleTheme}
               className="sr-only peer"
             />
-            <div className="w-full h-full bg-gray-300 cursor-pointer dark:bg-gray-600 rounded-full peer-checked:bg-blue-600 transition-colors duration-300"></div>
+            <div className="w-full ц h-full bg-gray-300 cursor-pointer dark:bg-gray-600 rounded-full peer-checked:bg-blue-600 transition-colors duration-300"></div>
 
             <div className="absolute top-[2px] left-[2px] w-[26px] h-[26px] bg-white rounded-full shadow-md flex items-center justify-center transition-all duration-300 peer-checked:translate-x-[26px]">
               <MdOutlineLightMode
@@ -107,9 +109,10 @@ const Header: FC = () => {
         {isOpen && (
           <nav className="md:hidden absolute flex flex-col space-y-4 top-17 right-0 w-40 bg-white dark:bg-dark-bg shadow-md  p-4 transition-all duration-300">
             {NAVBAR_ITEMS.map((item) => {
-              const isActive: boolean = item.path === '/'
-                ? pathname === '/'
-                : pathname.startsWith(item.path);
+              const isActive: boolean =
+                item.path === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.path);
               return (
                 <Link
                   key={item.path}

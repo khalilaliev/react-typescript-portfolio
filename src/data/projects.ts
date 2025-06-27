@@ -4,8 +4,8 @@ import weather from "../assets/weather.png";
 import todo from "../assets/todo.png";
 import propertyPulse from "../assets/propertypulse.png";
 import hillegal from "../assets/hilegal.png";
-import bridgecorner from "../assets/bridgecorner.png";
-import dscasapro from "../assets/dscasapro.png";
+// import bridgecorner from "../assets/bridgecorner.png";
+// import dscasapro from "../assets/dscasapro.png";
 import gawag from "../assets/gaw-ag.jpg";
 
 interface IProjects {
@@ -39,33 +39,33 @@ export const projects: IProjects[] = [
     description:
       "Using PHP Wordpress with building a full-featured fullstack project",
     imageUrl: gawag,
-    link: "https://gaw-ag.odin.toweb.swiss/",
+    link: "https://gaw-ag.ch",
     platform: "Web",
     stack: "Wordpress, PHP",
     language: "English, German, French",
   },
-  {
-    id: 3,
-    title: "DSCasaPro",
-    description:
-      "Using PHP Wordpress with building a full-featured fullstack project",
-    imageUrl: dscasapro,
-    link: "https://dscasapro.odin.toweb.swiss/",
-    platform: "Web",
-    stack: "Wordpress, PHP",
-    language: "German, English",
-  },
-  {
-    id: 4,
-    title: "BridgeCorner",
-    description:
-      "Using PHP Wordpress with building a full-featured fullstack project",
-    imageUrl: bridgecorner,
-    link: "https://bridgecorner.ch",
-    platform: "Web",
-    stack: "Wordpress, PHP",
-    language: "German",
-  },
+  // {
+  //   id: 3,
+  //   title: "DSCasaPro",
+  //   description:
+  //     "Using PHP Wordpress with building a full-featured fullstack project",
+  //   imageUrl: dscasapro,
+  //   link: "https://dscasapro.odin.toweb.swiss/",
+  //   platform: "Web",
+  //   stack: "Wordpress, PHP",
+  //   language: "German, English",
+  // },
+  // {
+  //   id: 4,
+  //   title: "BridgeCorner",
+  //   description:
+  //     "Using PHP Wordpress with building a full-featured fullstack project",
+  //   imageUrl: bridgecorner,
+  //   link: "https://bridgecorner.ch",
+  //   platform: "Web",
+  //   stack: "Wordpress, PHP",
+  //   language: "German",
+  // },
   {
     id: 5,
     title: "Fullstack ProShop",

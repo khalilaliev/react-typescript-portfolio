@@ -8,7 +8,7 @@ import Home from "../pages/Home";
 export interface INavbarItem {
   path: string;
   title: string;
-  element: ComponentType;
+  element?: ComponentType;
   isActive?: boolean;
 }
 
@@ -33,6 +33,11 @@ export const NAVBAR_ITEMS: INavbarItem[] = [
     title: "Projects",
     element: Projects,
   },
+  // {
+  //   path: "#",
+  //   title: 'Wordpress',
+  //   element: DropdownMenu,
+  // },
   {
     path: "/contact",
     title: "Contact",
