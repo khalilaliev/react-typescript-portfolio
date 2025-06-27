@@ -23,7 +23,7 @@ interface IProjects {
 export const projects: IProjects[] = [
   {
     id: 1,
-    title: 'Fullstack PropertyPulse',
+    title: "Fullstack PropertyPulse",
     description:
       "Building a full-featured property rental website using Next.js",
     imageUrl: propertyPulse,
@@ -35,7 +35,7 @@ export const projects: IProjects[] = [
   },
   {
     id: 2,
-    title: 'Gaw AG',
+    title: "Gaw AG",
     description:
       "Using PHP Wordpress with building a full-featured fullstack project",
     imageUrl: gawag,
