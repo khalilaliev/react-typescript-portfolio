@@ -1,5 +1,6 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Title from "../Title/Title";
+import { MdMail } from "react-icons/md";
 
 const OnTheWeb = () => {
   return (
@@ -31,6 +32,15 @@ const OnTheWeb = () => {
             className="flex text-lg items-center dark:hover:text-blue-500 hover:text-blue-500 transition-all  duration-300 gap-2 dark:text-dark-text"
           >
             <FaInstagram className="text-xl " /> Instagram
+          </a>
+        </li>
+        <li className="max-w-32">
+          <a
+            href="mailto:khalilaliev0@gmail.com"
+            target="_blank"
+            className="flex text-lg items-center dark:hover:text-blue-500 hover:text-blue-500 transition-all  duration-300 gap-2 dark:text-dark-text"
+          >
+            <MdMail className="text-xl " /> E-Mail
           </a>
         </li>
       </ul>

@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div className="mt-9">
       <Title text="Skills" />
-      <ul className="mt-3 flex justify-between flex-wrap gap-5">
+      <ul className="mt-3 flex flex-wrap gap-5">
         {skills.map((skill) => (
           <a
             key={skill.id}

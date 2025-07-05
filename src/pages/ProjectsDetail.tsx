@@ -11,6 +11,8 @@ import DynamicTitle from "../components/DynamicTitle/DynamicTitle";
 const ProjectsDetail: FC = () => {
   const { id } = useParams<{ id: string }>();
   const project = projects.find((p) => p.id === Number(id));
+  console.log(project);
+
   const { animationProps } = useFadeIn({ delay: 0 });
 
   if (!project) {

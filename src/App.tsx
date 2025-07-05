@@ -35,7 +35,7 @@ function App() {
       ) : (
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow max-w-4xl mx-auto mt-5 pt-20 container">
+          <main className="flex-grow max-w-5xl mx-auto mt-5 pt-20 container">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
