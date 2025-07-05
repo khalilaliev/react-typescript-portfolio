@@ -9,17 +9,17 @@ const Bio: FC = () => {
   return (
     <div className=" flex items-start justify-between max-lg:flex-col">
       <ul className="flex flex-col gap-2 max-lg:mb-9">
-        <li className="flex items-center gap-[8px]">
+        <li className="flex items-center gap-[8px] dark:text-white">
           <MdOutlineWork className="text-2xl max-md:hidden" />
-          2024 - present Front-End Developer at toweb GmbH
+          2024 - present: Front-End Developer at toweb GmbH
         </li>
-        <li className="flex items-center gap-[8px]">
+        <li className="flex items-center gap-[8px] dark:text-white">
           <FaBook className="text-2xl max-md:hidden" />
-          2023 - 2025Front-End Development at Hillel IT School
+          2023 - 2025: Front-End Development at Hillel IT School
         </li>
-        <li className="flex items-center gap-[8px]">
+        <li className="flex items-center gap-[8px] dark:text-white">
           <FaUniversity className="text-2xl max-md:hidden" />
-          2019 - 2023 Bachelor of International Economics
+          2019 - 2023: Bachelor of International Economics
         </li>
       </ul>
       <div className="flex gap-5 flex-wrap">
