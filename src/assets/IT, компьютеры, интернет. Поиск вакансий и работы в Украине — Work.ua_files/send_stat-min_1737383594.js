@@ -1,0 +1,1 @@
+!function(n){n(document).unbind("softrender").bind("softrender",(function(e,t){t.hasOwnProperty("placement")&&n.ajax({type:"POST",url:"/analytics/transition/"+t.placement+"/"})}))}(jQuery);

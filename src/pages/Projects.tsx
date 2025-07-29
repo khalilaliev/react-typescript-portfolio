@@ -14,7 +14,7 @@ const Projects: FC = () => {
     <motion.div {...animationProps}>
       <DynamicTitle title="Portfolio | Projects" />
       <Heading text="My Projects" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div
             key={project.id}

@@ -25,11 +25,13 @@ const ProjectsDetail: FC = () => {
       <BackButton source="/projects" text="Back to projects" />
       <div className="flex flex-col dark:bg-dark-bg bg-white shadow-lg dark:shadow-header-bg rounded-xl overflow-hidden w-full  duration-300 transition-all">
         <div className="flex-shrink-0">
-          <img
-            src={project.imageUrl}
-            alt={project.title}
-            className="rounded-xl"
-          />
+          <a href={project.link} target="_blank">
+            <img
+              src={project.imageUrl}
+              alt={project.title}
+              className="rounded-xl"
+            />
+          </a>
         </div>
         <div className="flex flex-col justify-between flex-grow p-10">
           <div className="mt-5 flex justify-between items-center gap-9">
