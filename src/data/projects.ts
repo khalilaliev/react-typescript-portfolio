@@ -8,7 +8,7 @@ import bridgecorner from "../assets/bridgecorner.png";
 import dscasapro from "../assets/dscasapro.png";
 import gawag from "../assets/gaw-ag.jpg";
 
-interface IProjects {
+export interface IProjects {
   id: number;
   title: string;
   description: string;

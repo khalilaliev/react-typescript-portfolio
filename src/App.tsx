@@ -13,6 +13,8 @@ import NotFoundPage from "./pages/NotFoundPage.tsx";
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const isBlogPage = location.pathname === "/blog";
+  // const isHomePage = location.pathname === "/";
 
   return (
     <>
@@ -35,7 +37,13 @@ function App() {
       ) : (
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow max-w-5xl mx-auto mt-5 pt-20 container">
+          <main
+            className={` ${
+              isBlogPage
+                ? "flex-grow mx-auto mt-5 pt-20 container max-w-[1200px]"
+                : "flex-grow max-w-5xl mx-auto mt-5 pt-20 container"
+            }`}
+          >
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />

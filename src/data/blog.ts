@@ -23,7 +23,7 @@ interface IActivity {
   img?: string;
 }
 
-interface IBlogs {
+export interface IBlogs {
   id: number;
   title: string;
   description: string;
