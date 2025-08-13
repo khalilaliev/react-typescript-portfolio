@@ -14,7 +14,7 @@ function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const isBlogPage = location.pathname === "/blog";
-  // const isHomePage = location.pathname === "/";
+  const isProjectPage = location.pathname === "/";
 
   return (
     <>
@@ -38,10 +38,8 @@ function App() {
         <div className="flex flex-col min-h-screen">
           <Header />
           <main
-            className={` ${
-              isBlogPage
-                ? "flex-grow mx-auto mt-5 pt-20 container max-w-[1200px]"
-                : "flex-grow max-w-5xl mx-auto mt-5 pt-20 container"
+            className={`flex-grow mx-auto mt-5 pt-20 container ${
+              isBlogPage || isProjectPage ? "max-w-[1400px]" : "max-w-5xl"
             }`}
           >
             <Routes>
@@ -49,7 +47,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/:id" element={<ProjectsDetail />} />
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/blogs" element={<Blog />} />
               <Route path="/blog/:id" element={<BlogDetails />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFoundPage />} />

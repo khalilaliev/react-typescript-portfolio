@@ -24,14 +24,14 @@ export const NAVBAR_ITEMS: INavbarItem[] = [
     element: About,
   },
   {
-    path: "/blog",
-    title: "Blog",
-    element: Blog,
-  },
-  {
     path: "/projects",
     title: "Projects",
     element: Projects,
+  },
+  {
+    path: "/blogs",
+    title: "Blog",
+    element: Blog,
   },
   // {
   //   path: "#",

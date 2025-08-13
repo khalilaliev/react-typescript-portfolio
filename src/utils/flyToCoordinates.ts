@@ -1,4 +1,5 @@
 import { MapRef } from "react-map-gl";
+
 export const flyToCoordinates = (
   coordinates: [number, number],
   zoom: number,

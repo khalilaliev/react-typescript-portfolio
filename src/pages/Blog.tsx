@@ -77,6 +77,7 @@ const Blog: FC = () => {
         <div className="flex gap-5">
           <div className="flex-[30%]">
             <Sidebar
+              text="My Blogs"
               data={blogs}
               selectedId={selectedId}
               onSelect={(id) => setSelectedId(id)}
