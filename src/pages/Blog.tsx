@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Heading from "../components/Heading/Heading";
 import DynamicTitle from "../components/DynamicTitle/DynamicTitle";
 import Sidebar from "../components/Sidebar/Sidebar";
-import { Link } from "react-router-dom";
 import Button from "../components/Button/Button";
 
 const Blog: FC = () => {
